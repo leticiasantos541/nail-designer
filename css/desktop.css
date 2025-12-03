@@ -1,0 +1,54 @@
+/* ===============================
+   DESKTOP (a partir de 1024px)
+=============================== */
+@media (min-width: 1024px) {
+
+    /* BANNER */
+    .banner {
+        padding: 100px 140px;
+        min-height: 580px; /* ainda maior para destacar a imagem */
+    }
+
+    .banner-texto h1 {
+        font-size: 52px;
+        font-weight: 700;
+    }
+
+    .banner-texto p {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .banner-img {
+        width: 400px;  /* aumenta a imagem principal */
+        max-width: 100%;
+    }
+
+    /* SECÇÕES */
+    .secao {
+        padding: 90px 140px;
+        gap: 60px;
+    }
+
+    .secao-img {
+        width: 380px; /* imagens maiores */
+        border-radius: 18px;
+    }
+
+    /* BOLAS MAIORES + FONTE ELEGANTE */
+    .bola {
+        width: 220px;
+        height: 220px;
+        font-size: 22px;
+        font-family: "Georgia", "Times New Roman", serif; /* fonte elegante */
+        letter-spacing: 0.5px;
+    }
+
+    /* Rodapé */
+    .rodape {
+        padding: 35px;
+        font-size: 20px;
+    }
+}
+
+

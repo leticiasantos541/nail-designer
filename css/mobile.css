@@ -1,0 +1,73 @@
+/* ===============================
+   MOBILE (até 768px)
+=============================== */
+@media (max-width: 768px) {
+
+    /* MENU */
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu nav {
+        margin-top: 12px;
+    }
+
+    .menu nav a {
+        margin: 8px;
+        display: inline-block;
+    }
+
+    /* BANNER */
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 25px;
+        min-height: auto;
+    }
+
+    .banner-texto h1 {
+        font-size: 32px; /* maior e mais legível */
+        font-weight: 700;
+    }
+
+    .banner-texto p {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+
+    .banner-img {
+        width: 85%;
+        max-width: 380px; /* limite para evitar distorção */
+        margin-top: 30px;
+    }
+
+    /* SECÇÕES (bolas + imagens) */
+    .secao {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .secao-img {
+        width: 260px;   /* imagem maior */
+        border-radius: 16px;
+        margin-bottom: 25px;
+    }
+
+    .bola {
+        width: 170px;        /* bolas maiores */
+        height: 170px;
+        font-size: 18px;
+        font-family: "Georgia", "Times New Roman", serif; /* letra elegante */
+        letter-spacing: 0.4px;
+        margin: 20px 0;
+    }
+
+    /* Rodapé */
+    .rodape {
+        font-size: 16px;
+        padding: 18px;
+    }
+}
+

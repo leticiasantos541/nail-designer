@@ -1,0 +1,52 @@
+/* RESET E AJUSTES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte padrão do site */
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #000000;
+    line-height: 1.4;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* IMAGENS */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* SUAVIDADE */
+html {
+    scroll-behavior: smooth;
+}
+
+/* FOCUS */
+*:focus {
+    outline: none;
+}
+
+/* TIPOGRAFIA SUAVE */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* CONTAINER GLOBAL */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
