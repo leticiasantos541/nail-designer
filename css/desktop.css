@@ -1,54 +1,348 @@
-/* ===============================
-   DESKTOP (a partir de 1024px)
-=============================== */
+/* desktop.css */
 @media (min-width: 1024px) {
-
-    /* BANNER */
-    .banner {
-        padding: 100px 140px;
-        min-height: 580px; /* ainda maior para destacar a imagem */
+    .nav-menu a {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+    
+    .nav-menu li {
+        margin-left: 2.5rem;
     }
 
-    .banner-texto h1 {
-        font-size: 52px;
-        font-weight: 700;
+    .slogan-grande {
+        font-size: 4rem;
     }
 
-    .banner-texto p {
-        font-size: 22px;
-        margin-bottom: 30px;
+    .subtitulo {
+        font-size: 1.5rem;
     }
 
-    .banner-img {
-        width: 400px;  /* aumenta a imagem principal */
-        max-width: 100%;
+    .btn-agendar {
+        font-size: 1.3rem;
+        padding: 1.2rem 3rem;
     }
 
-    /* SECÇÕES */
-    .secao {
-        padding: 90px 140px;
-        gap: 60px;
+    .banner-imagem img {
+        max-height: 450px;
     }
 
-    .secao-img {
-        width: 380px; /* imagens maiores */
-        border-radius: 18px;
+    .grid-bolinhas-fotos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
     }
 
-    /* BOLAS MAIORES + FONTE ELEGANTE */
-    .bola {
-        width: 220px;
+    .foto-container img {
         height: 220px;
-        font-size: 22px;
-        font-family: "Georgia", "Times New Roman", serif; /* fonte elegante */
-        letter-spacing: 0.5px;
     }
 
-    /* Rodapé */
-    .rodape {
-        padding: 35px;
-        font-size: 20px;
+    .titulo-item {
+        font-size: 2rem;
+    }
+
+    .descricao-item {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid-bolinhas-fotos {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+    
+    .item-com-bolinha {
+        padding: 0 1rem;
     }
 }
 
 
+/* Ajustes para a página Sobre mim em desktop */
+@media (min-width: 1024px) {
+    .titulo-pagina {
+        font-size: 3.5rem;
+    }
+
+    .subtitulo-pagina {
+        font-size: 1.5rem;
+    }
+
+    .quadrado-cinzento h2 {
+        font-size: 2.2rem;
+    }
+
+    .quadrado-cinzento p {
+        font-size: 1.2rem;
+    }
+
+    .retangulo-roxo h3 {
+        font-size: 2rem;
+    }
+
+    .retangulo-roxo p {
+        font-size: 1.2rem;
+    }
+
+    .retangulo-roxo .destaque {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+/* Ajustes para a página Trabalhos em desktop */
+@media (min-width: 1024px) {
+    .caixa-introducao h2 {
+        font-size: 2.2rem;
+    }
+
+    .caixa-introducao p {
+        font-size: 1.2rem;
+    }
+
+    .caixa-introducao .destaque {
+        font-size: 1.4rem;
+    }
+
+    .galeria-trabalhos {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 3rem;
+    }
+
+    .container-foto {
+        height: 280px;
+    }
+
+    .info-trabalho h3 {
+        font-size: 1.6rem;
+    }
+
+    .info-trabalho p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .galeria-trabalhos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+/* Ajustes para a página Preços e Materiais em desktop */
+@media (min-width: 1024px) {
+    .cabecalho-secao h2 {
+        font-size: 2.5rem;
+    }
+
+    .linha-horizontal {
+        width: 250px;
+    }
+
+    .item-preco {
+        padding: 1.8rem;
+    }
+
+    .item-preco .servico {
+        font-size: 1.3rem;
+    }
+
+    .item-preco .preco {
+        font-size: 1.4rem;
+    }
+
+    .nota-precos {
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+
+    .intro-materiais {
+        font-size: 1.2rem;
+    }
+
+    .lista-materiais {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    .item-material {
+        padding: 2rem;
+    }
+
+    .item-material h4 {
+        font-size: 1.4rem;
+    }
+
+    .item-material p {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+/* Ajustes para a página Contactos em desktop */
+@media (min-width: 1024px) {
+    .mensagem-carinho h2 {
+        font-size: 2.5rem;
+    }
+
+    .texto-carinho {
+        font-size: 1.3rem;
+    }
+
+    .assinatura-carinho {
+        font-size: 1.4rem;
+    }
+
+    .dados-contacto {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .item-contacto h3 {
+        font-size: 1.5rem;
+    }
+
+    .item-contacto p {
+        font-size: 1.2rem;
+    }
+
+    .form-contacto {
+        padding: 3rem;
+    }
+
+    .grupo-form label {
+        font-size: 1.2rem;
+    }
+
+    .grupo-form input,
+    .grupo-form select,
+    .grupo-form textarea {
+        font-size: 1.1rem;
+        padding: 1.2rem;
+    }
+
+    .btn-enviar {
+        font-size: 1.3rem;
+        padding: 1.5rem 3rem;
+    }
+
+    .dia-horario {
+        font-size: 1.3rem;
+        padding: 1.2rem;
+    }
+
+    .nota-horario {
+        font-size: 1.1rem;
+    }
+}/* Ajustes para a página Contactos em desktop */
+@media (min-width: 1024px) {
+    .mensagem-carinho h2 {
+        font-size: 2.5rem;
+    }
+
+    .texto-carinho {
+        font-size: 1.3rem;
+    }
+
+    .assinatura-carinho {
+        font-size: 1.4rem;
+    }
+
+    .dados-contacto {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .item-contacto h3 {
+        font-size: 1.5rem;
+    }
+
+    .item-contacto p {
+        font-size: 1.2rem;
+    }
+
+    .form-contacto {
+        padding: 3rem;
+    }
+
+    .grupo-form label {
+        font-size: 1.2rem;
+    }
+
+    .grupo-form input,
+    .grupo-form select,
+    .grupo-form textarea {
+        font-size: 1.1rem;
+        padding: 1.2rem;
+    }
+
+    .btn-enviar {
+        font-size: 1.3rem;
+        padding: 1.5rem 3rem;
+    }
+
+    .dia-horario {
+        font-size: 1.3rem;
+        padding: 1.2rem;
+    }
+
+    .nota-horario {
+        font-size: 1.1rem;
+    }
+}
+
+/* Ajustes para a página Contactos em desktop */
+@media (min-width: 1024px) {
+    .mensagem-carinho h2 {
+        font-size: 2.5rem;
+    }
+
+    .texto-carinho {
+        font-size: 1.3rem;
+    }
+
+    .assinatura-carinho {
+        font-size: 1.4rem;
+    }
+
+    .dados-contacto {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .item-contacto h3 {
+        font-size: 1.5rem;
+    }
+
+    .item-contacto p {
+        font-size: 1.2rem;
+    }
+
+    .form-contacto {
+        padding: 3rem;
+    }
+
+    .grupo-form label {
+        font-size: 1.2rem;
+    }
+
+    .grupo-form input,
+    .grupo-form select,
+    .grupo-form textarea {
+        font-size: 1.1rem;
+        padding: 1.2rem;
+    }
+
+    .btn-enviar {
+        font-size: 1.3rem;
+        padding: 1.5rem 3rem;
+    }
+
+    .dia-horario {
+        font-size: 1.3rem;
+        padding: 1.2rem;
+    }
+
+    .nota-horario {
+        font-size: 1.1rem;
+    }
+}

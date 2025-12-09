@@ -3,105 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-
-    <!-- FONTE ELEGANTE -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-
+    <title>Unhas com Arte e Delicadeza</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/desktop.css">
     <link rel="stylesheet" href="css/mobile.css">
 </head>
-
 <body>
-
-    <!-- MENU -->
-    <header class="menu">
-        <div class="logo">Nail Designer</div>
-
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre mim</a>
-            <a href="trabalhos.html">Trabalhos</a>
-            <a href="preços-e-materias.html">Preços e materiais</a>
-            <a href="contactos.html">Contactos</a>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <h1>Unhas com Arte e Delicadeza</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="sobre.html">Sobre mim</a></li>
+                <li><a href="trabalhos.html">Trabalhos</a></li>
+                <li><a href="precos-e-materiais.html">Preços e Materiais</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
         </nav>
     </header>
 
-   <!-- BANNER / FOTO INICIAL -->
-<section class="banner">
-    <div class="banner-texto">
-        <h1>Unhas com arte e delicadeza</h1>
-        <p>Especialista em manicure, gel e nail art</p>
-        <a href="contactos.html" class="btn-agendar">Agendar agora</a>
-    </div>
+    <main class="main-home">
+        <!-- Banner roxo claro com imagem e botão -->
+        <section class="banner-roxo">
+            <div class="container banner-content">
+                <div class="banner-texto">
+                    <h2 class="slogan-grande">Unhas com arte e delicadeza</h2>
+                    <p class="subtitulo">Transformo as suas unhas em verdadeiras obras de arte</p>
+                    <a href="contactos.html" class="btn-agendar">Agendar Agora</a>
+                </div>
+                <div class="banner-imagem">
+                    <img src="media/inico-layout-site-sem-fundo.png" alt="Unhas decoradas artisticamente">
+                </div>
+            </div>
+        </section>
 
-    <!-- FOTO -->
-    <div class="banner-img">
-        <img src="../media/inico-layout-site-sem-fundo.png" alt="Imagem inicial">
-    </div>
-</section>
+        <section class="conteudo-principal">
+            <div class="container">
+                <!-- Grid com cada item tendo sua foto e bolinha -->
+                <div class="grid-bolinhas-fotos">
+                    <!-- Item 1: Sobre mim -->
+                    <div class="item-com-bolinha">
+                        <a href="sobre.html" class="link-item">
+                            <div class="bolinha-sobre-foto"></div>
+                            <div class="foto-container">
+                                <img src="media/nail-designer.jpg" alt="Sobre mim">
+                            </div>
+                            <h3 class="titulo-item">Sobre mim</h3>
+                            <p class="descricao-item">Conheça a artista por trás das unhas</p>
+                        </a>
+                    </div>
 
-    <!-- SECÇÃO SOBRE MIM -->
-    <div class="secao">
-        <div class="secao-esquerda">
-            <img src="/media/nail-designer.jpg" class="secao-img" alt="Imagem sobre mim">
-        </div>
+                    <!-- Item 2: Trabalhos -->
+                    <div class="item-com-bolinha">
+                        <a href="trabalhos.html" class="link-item">
+                            <div class="bolinha-sobre-foto"></div>
+                            <div class="foto-container">
+                                <img src="media/imagem-original-trabalhos.jpg" alt="Trabalhos">
+                            </div>
+                            <h3 class="titulo-item">Trabalhos</h3>
+                            <p class="descricao-item">Veja os meus trabalhos anteriores</p>
+                        </a>
+                    </div>
 
-        <div class="secao-direita">
-            <a class="bola" href="sobre.html">
-                Sobre mim<br>clicar aqui
-            </a>
-        </div>
-    </div>
+                    <!-- Item 3: Preços e Materiais -->
+                    <div class="item-com-bolinha">
+                        <a href="precos-e-materiais.html" class="link-item">
+                            <div class="bolinha-sobre-foto"></div>
+                            <div class="foto-container">
+                                <img src="media/materiais-oficial-layout.png " alt="Materiais">
+                            </div>
+                            <h3 class="titulo-item">Preços e Materiais</h3>
+                            <p class="descricao-item">Conheça os materiais e preços</p>
+                        </a>
+                    </div>
 
-    <!-- SECÇÃO TRABALHOS -->
-    <div class="secao">
-        <div class="secao-esquerda">
-            <img src="../media/imagem original trabalhos.jpg" class="secao-img" alt="Imagem de trabalhos">
-        </div>
+                    <!-- Item 4: Contactos -->
+                    <div class="item-com-bolinha">
+                        <a href="contactos.html" class="link-item">
+                            <div class="bolinha-sobre-foto"></div>
+                            <div class="foto-container">
+                                <img src="media/icone-oficial-contactos.png" alt="Contactos">
+                            </div>
+                            <h3 class="titulo-item">Contactos</h3>
+                            <p class="descricao-item">Entre em contacto para agendar</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <div class="secao-direita">
-            <a class="bola" href="trabalhos.html">
-                Trabalhos<br>clicar aqui
-            </a>
-        </div>
-    </div>
-
-    <!-- SECÇÃO PREÇOS E MATERIAIS -->
-    <div class="secao">
-        <div class="secao-esquerda">
-            <img src="../media/materiais oficial layout.png" class="secao-img" alt="Imagem preços e materiais">
-        </div>
-
-        <div class="secao-direita">
-            <a class="bola" href="preços-e-materias.html">
-                Preços e<br>materiais<br>clicar aqui
-            </a>
-        </div>
-    </div>
-
-    <!-- SECÇÃO CONTACTOS -->
-    <div class="secao">
-        <div class="secao-esquerda">
-            <img src="../media/icone oficial contactos.png" class="secao-img" alt="Ícone contactos">
-        </div>
-
-        <div class="secao-direita">
-            <a class="bola" href="contactos.html">
-                Contactos<br>clicar aqui
-            </a>
-        </div>
-    </div>
-
-    <!-- RODAPÉ -->
-    <footer class="rodape">
-        © Nathalie Crochane
+    <footer class="footer">
+        <p>&copy; 2025 Unhas com Arte e Delicadeza. Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>
+
 
 
 

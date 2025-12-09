@@ -3,40 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactos</title>
-
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/desktop.css">
-    <link rel="stylesheet" href="../css/mobile.css">
+    <title>Contactos - Unhas com Arte e Delicadeza</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
-
 <body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <h1>Unhas com Arte e Delicadeza</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre mim</a></li>
+                <li><a href="trabalhos.html">Trabalhos</a></li>
+                <li><a href="precos-e-materiais.html">Preços e Materiais</a></li>
+                <li><a href="contactos.html" class="active">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header class="menu">
-    <div class="logo">Nail Designer</div>
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre mim</a>
-        <a href="trabalhos.html">Trabalhos</a>
-        <a href="preços-e-materias.html">Preços e materiais</a>
-        <a href="contactos.html">Contactos</a>
-    </nav>
-</header>
+    <main class="main-contactos">
+        <section class="hero-contactos">
+            <div class="container">
+                <h1 class="titulo-pagina">Contactos</h1>
+                <p class="subtitulo-pagina">Estou aqui para cuidar de ti e das tuas unhas</p>
+            </div>
+        </section>
 
-<section class="pagina-simples">
-    <img src="../media/contactos-icon.png" class="pagina-img icon">
+        <section class="conteudo-contactos">
+            <div class="container">
+                <!-- Mensagem de carinho -->
+                <div class="mensagem-carinho">
+                    <div class="coracao">❤️</div>
+                    <h2>É um prazer receber-te aqui!</h2>
+                    <p class="texto-carinho">Cada cliente que chega até mim é especial. Adoro conhecer histórias, partilhar sorrisos e criar unhas que fazem as pessoas sentirem-se ainda mais bonitas e confiantes.</p>
+                    <p class="texto-carinho">Se tens alguma dúvida, ideia para um design ou simplesmente queres marcar a tua próxima sessão, estou aqui para ti. Mal posso esperar para cuidar de ti com todo o carinho e atenção que mereces!</p>
+                    <div class="assinatura-carinho">Com carinho,<br><strong>Nathalie</strong></div>
+                </div>
 
-    <h1>Contactos</h1>
+                <!-- Informações de contacto -->
+                <div class="info-contactos">
+                    <div class="cabecalho-secao">
+                        <h2>ENTRE EM CONTACTO</h2>
+                        <div class="linha-horizontal"></div>
+                    </div>
 
-    <p>Podes agendar através de:</p>
+                    <div class="dados-contacto">
+                        <div class="item-contacto">
+                            <div class="icone-contacto">📱</div>
+                            <h3>Telemóvel</h3>
+                            <p>+351 912 345 678</p>
+                            <p class="horario">Disponível das 9h às 19h</p>
+                        </div>
 
-    <p><strong> Local:</strong> Rua Exemplo, Nº 123</p>
-    <p><strong> Telefone:</strong> 912 345 678</p>
-    <p><strong> Email:</strong> contacto@exemplo.com</p>
+                        <div class="item-contacto">
+                            <div class="icone-contacto">📧</div>
+                            <h3>Email</h3>
+                            <p>nathalie@unhascomarte.pt</p>
+                            <p class="horario">Resposta em até 24h</p>
+                        </div>
 
-    <a href="contactos.html" class="btn-agendar">Agendar agora</a>
-</section>
+                        <div class="item-contacto">
+                            <div class="icone-contacto">📍</div>
+                            <h3>Localização</h3>
+                            <p>Lisboa, Portugal</p>
+                            <p class="horario">Atendimento por marcação</p>
+                        </div>
 
+                        <div class="item-contacto">
+                            <div class="icone-contacto">💬</div>
+                            <h3>Redes Sociais</h3>
+                            <p>@unhascomarte</p>
+                            <p class="horario">Instagram & Facebook</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário de contacto -->
+                <div class="formulario-contacto">
+                    <div class="cabecalho-secao">
+                        <h2>ENVIA UMA MENSAGEM</h2>
+                        <div class="linha-horizontal"></div>
+                    </div>
+
+                    <form class="form-contacto">
+                        <div class="grupo-form">
+                            <label for="nome">O teu nome:</label>
+                            <input type="text" id="nome" name="nome" required placeholder="Como gostas que te chame?">
+                        </div>
+
+                        <div class="grupo-form">
+                            <label for="email">O teu email:</label>
+                            <input type="email" id="email" name="email" required placeholder="Para te responder">
+                        </div>
+
+                        <div class="grupo-form">
+                            <label for="assunto">Assunto:</label>
+                            <select id="assunto" name="assunto">
+                                <option value="marcacao">Marcação de serviço</option>
+                                <option value="duvida">Dúvida sobre serviços</option>
+                                <option value="orçamento">Pedido de orçamento</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo-form">
+                            <label for="mensagem">A tua mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Conta-me tudo! Estou ansiosa por te ajudar..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-enviar">Enviar mensagem com carinho ❤️</button>
+                    </form>
+                </div>
+
+                <!-- Horário de atendimento -->
+                <div class="horario-atendimento">
+                    <div class="cabecalho-secao">
+                        <h2>HORÁRIO DE ATENDIMENTO</h2>
+                        <div class="linha-horizontal"></div>
+                    </div>
+
+                    <div class="tabela-horario">
+                        <div class="dia-horario">
+                            <span>Segunda a Sexta</span>
+                            <span>9h - 19h</span>
+                        </div>
+                        <div class="dia-horario">
+                            <span>Sábado</span>
+                            <span>10h - 16h</span>
+                        </div>
+                        <div class="dia-horario">
+                            <span>Domingo</span>
+                            <span>Encerrado</span>
+                        </div>
+                    </div>
+
+                    <p class="nota-horario">As marcações são feitas com antecedência para garantir o melhor atendimento possível.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Unhas com Arte e Delicadeza. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

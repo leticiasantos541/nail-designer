@@ -1,73 +1,361 @@
-/* ===============================
-   MOBILE (até 768px)
-=============================== */
+/* mobile.css */
 @media (max-width: 768px) {
-
-    /* MENU */
-    .menu {
+    .nav {
         flex-direction: column;
-        text-align: center;
-    }
-
-    .menu nav {
-        margin-top: 12px;
-    }
-
-    .menu nav a {
-        margin: 8px;
-        display: inline-block;
-    }
-
-    /* BANNER */
-    .banner {
-        flex-direction: column;
-        text-align: center;
-        padding: 50px 25px;
+        padding: 1rem;
         min-height: auto;
     }
 
-    .banner-texto h1 {
-        font-size: 32px; /* maior e mais legível */
-        font-weight: 700;
-    }
-
-    .banner-texto p {
-        font-size: 18px;
-        margin-bottom: 18px;
-    }
-
-    .banner-img {
-        width: 85%;
-        max-width: 380px; /* limite para evitar distorção */
-        margin-top: 30px;
-    }
-
-    /* SECÇÕES (bolas + imagens) */
-    .secao {
-        flex-direction: column;
+    .logo {
+        margin-bottom: 1rem;
         text-align: center;
-        padding: 40px 20px;
     }
 
-    .secao-img {
-        width: 260px;   /* imagem maior */
-        border-radius: 16px;
-        margin-bottom: 25px;
+    .logo h1 {
+        font-size: 1.3rem;
     }
 
-    .bola {
-        width: 170px;        /* bolas maiores */
-        height: 170px;
-        font-size: 18px;
-        font-family: "Georgia", "Times New Roman", serif; /* letra elegante */
-        letter-spacing: 0.4px;
-        margin: 20px 0;
+    .nav-menu {
+        margin-top: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
     }
 
-    /* Rodapé */
-    .rodape {
-        font-size: 16px;
-        padding: 18px;
+    .nav-menu li {
+        margin: 0.3rem;
+    }
+
+    .nav-menu a {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Banner responsivo */
+    .banner-roxo {
+        padding: 2rem 1rem;
+        min-height: auto;
+    }
+
+    .banner-content {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .slogan-grande {
+        font-size: 2.2rem;
+    }
+
+    .subtitulo {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn-agendar {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+
+    .banner-imagem img {
+        max-height: 300px;
+    }
+
+    /* Grid responsivo */
+    .conteudo-principal {
+        padding: 3rem 1rem;
+    }
+
+    .grid-bolinhas-fotos {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .item-com-bolinha {
+        margin-bottom: 1rem;
+    }
+
+    .bolinha-sobre-foto {
+        width: 50px;
+        height: 50px;
+        top: -20px;
+    }
+
+    .foto-container img {
+        height: 180px;
+    }
+
+    .titulo-item {
+        font-size: 1.5rem;
+    }
+
+    .descricao-item {
+        font-size: 1rem;
     }
 }
 
+
+/* Responsividade para a página Sobre mim */
+@media (max-width: 768px) {
+    .hero-sobre {
+        padding: 2rem 1rem;
+    }
+
+    .titulo-pagina {
+        font-size: 2.2rem;
+    }
+
+    .subtitulo-pagina {
+        font-size: 1.1rem;
+    }
+
+    .conteudo-sobre {
+        padding: 2rem 1rem;
+    }
+
+    .sobre-perfil {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .foto-perfil {
+        max-width: 100%;
+    }
+
+    .quadrado-cinzento {
+        padding: 1.5rem;
+    }
+
+    .quadrado-cinzento h2 {
+        font-size: 1.6rem;
+    }
+
+    .quadrado-cinzento p {
+        font-size: 1rem;
+    }
+
+    .retangulo-roxo {
+        padding: 1.5rem;
+    }
+
+    .retangulo-roxo h3 {
+        font-size: 1.5rem;
+    }
+
+    .retangulo-roxo p {
+        font-size: 1rem;
+    }
+
+    .retangulo-roxo .destaque {
+        font-size: 1.1rem;
+    }
+
+    .retangulo-roxo .assinatura {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Responsividade para a página Trabalhos */
+@media (max-width: 768px) {
+    .hero-trabalhos {
+        padding: 2rem 1rem;
+    }
+
+    .conteudo-trabalhos {
+        padding: 2rem 1rem;
+    }
+
+    .caixa-introducao {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .caixa-introducao h2 {
+        font-size: 1.6rem;
+    }
+
+    .caixa-introducao p {
+        font-size: 1rem;
+    }
+
+    .caixa-introducao .destaque {
+        font-size: 1.1rem;
+    }
+
+    .galeria-trabalhos {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .container-foto {
+        height: 200px;
+    }
+
+    .info-trabalho {
+        padding: 1.2rem;
+    }
+
+    .info-trabalho h3 {
+        font-size: 1.3rem;
+    }
+
+    .info-trabalho p {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+
+
+
+/* Responsividade para a página Preços e Materiais */
+@media (max-width: 768px) {
+    .hero-precos {
+        padding: 2rem 1rem;
+    }
+
+    .conteudo-precos {
+        padding: 2rem 1rem;
+    }
+
+    .cabecalho-secao h2 {
+        font-size: 1.6rem;
+    }
+
+    .linha-horizontal {
+        width: 150px;
+    }
+
+    .item-preco {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .item-preco .servico {
+        font-size: 1.1rem;
+    }
+
+    .item-preco .preco {
+        font-size: 1.2rem;
+    }
+
+    .nota-precos {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+        margin: 1.5rem auto 3rem;
+    }
+
+    .intro-materiais {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .lista-materiais {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .item-material {
+        padding: 1.2rem;
+    }
+
+    .item-material h4 {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+/* Responsividade para a página Contactos */
+@media (max-width: 768px) {
+    .hero-contactos {
+        padding: 2rem 1rem;
+    }
+
+    .conteudo-contactos {
+        padding: 2rem 1rem;
+    }
+
+    .mensagem-carinho {
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .coracao {
+        font-size: 2.5rem;
+    }
+
+    .mensagem-carinho h2 {
+        font-size: 1.6rem;
+    }
+
+    .texto-carinho {
+        font-size: 1rem;
+    }
+
+    .assinatura-carinho {
+        font-size: 1.1rem;
+    }
+
+    .dados-contacto {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .item-contacto {
+        padding: 1.5rem;
+    }
+
+    .icone-contacto {
+        font-size: 2rem;
+    }
+
+    .item-contacto h3 {
+        font-size: 1.2rem;
+    }
+
+    .item-contacto p {
+        font-size: 1rem;
+    }
+
+    .form-contacto {
+        padding: 1.5rem;
+    }
+
+    .grupo-form {
+        margin-bottom: 1.2rem;
+    }
+
+    .grupo-form label {
+        font-size: 1rem;
+    }
+
+    .grupo-form input,
+    .grupo-form select,
+    .grupo-form textarea {
+        padding: 0.8rem;
+        font-size: 0.95rem;
+    }
+
+    .btn-enviar {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    .tabela-horario {
+        padding: 1.5rem;
+    }
+
+    .dia-horario {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .nota-horario {
+        font-size: 0.9rem;
+    }
+}

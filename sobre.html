@@ -3,96 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim | Nathalie Crochine</title>
-    
-    <!-- Fonte Playfair Display -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS separados -->
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/desktop.css" media="(min-width: 1024px)">
-    <link rel="stylesheet" href="../css/mobile.css" media="(max-width: 768px)">
+    <title>Sobre mim - Unhas com Arte e Delicadeza</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
-
 <body>
-
-    <!-- MENU -->
-    <header class="menu">
-        <div class="logo">Nail Designer</div>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre mim</a>
-            <a href="trabalhos.html">Trabalhos</a>
-            <a href="preços-e-materias.html">Preços e materiais</a>
-            <a href="contactos.html">Contactos</a>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <h1>Unhas com Arte e Delicadeza</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html" class="active">Sobre mim</a></li>
+                <li><a href="trabalhos.html">Trabalhos</a></li>
+                <li><a href="precos-e-materiais.html">Preços e Materiais</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main class="sobre-container">
-        
-        <!-- SEÇÃO SUPERIOR: FOTO + TEXTO LADO A LADO -->
-        <section class="sobre-superior">
-            
-            <!-- FOTO À ESQUERDA -->
-            <div class="sobre-foto">
-                <img src="../media/nail-designer.jpg" alt="Nathalie Crochine - Nail Designer">
-            </div>
-            
-            <!-- TEXTO À DIREITA -->
-            <div class="sobre-texto">
-                <h1>Sobre mim</h1>
-                
-                <p class="destaque">
-                    Olá! O meu nome é <strong>Nathalie Crochine</strong> e sou Nail Artist apaixonada por 
-                    transformar unhas em pequenas obras de arte.
-                </p>
-                
-                <p>
-                    O meu objetivo é oferecer um trabalho que combina estética, cuidado e criatividade, 
-                    garantindo que cada cliente se sinta confiante, elegante e única.
-                </p>
-                
-                <p>
-                    Desde o primeiro dia em que entrei no mundo da estética, descobri que as unhas eram a minha 
-                    verdadeira paixão. Com o tempo, fui aperfeiçoando técnicas, explorando tendências e investindo 
-                    em formação contínua para oferecer resultados profissionais, duradouros e totalmente 
-                    personalizados.
-                </p>
-            </div>
-            
-        </section>
-        
-        <!-- SEÇÃO INFERIOR: TEXTO EM CAIXA CINZA CLARO -->
-        <section class="sobre-inferior">
-            <div class="caixa-cinza">
-                <p>
-                    Acredito que cada detalhe faz diferença. Por isso, trabalho apenas com materiais de alta qualidade,
-                    produtos seguros e marcas reconhecidas, garantindo não só beleza, mas também saúde e bem-estar das unhas.
-                </p>
-                
-                <p>
-                    Aqui, cada cliente é especial. Cada sessão é pensada com dedicação, carinho e atenção ao estilo e 
-                    personalidade de quem se senta à minha mesa.
-                </p>
-                
-                <p class="ultimo-paragrafo">
-                    Se procuras unhas elegantes, criativas e feitas com amor, estás no lugar certo.<br>
-                    Mal posso esperar para cuidar de ti e das tuas unhas!
-                </p>
-                
-                <a href="contactos.html" class="btn-agendar">Agendar agora</a>
+    <main class="main-sobre">
+        <section class="hero-sobre">
+            <div class="container">
+                <h1 class="titulo-pagina">Sobre mim</h1>
+                <p class="subtitulo-pagina">Conheça a artista por trás das unhas perfeitas</p>
             </div>
         </section>
-        
+
+        <section class="conteudo-sobre">
+            <div class="container">
+                <!-- Primeira seção: Foto à esquerda, texto à direita -->
+                <div class="sobre-perfil">
+                    <div class="foto-perfil">
+                        <img src="media/nail-designer.jpg" alt="Nathalie Crochine - Nail Artist">
+                    </div>
+                    <div class="texto-perfil">
+                        <div class="quadrado-cinzento">
+                            <h2>Olá! O meu nome é Nathalie Crochine</h2>
+                            <p>Sou Nail Artist apaixonada por transformar unhas em pequenas obras de arte. O meu objetivo é oferecer um trabalho que combina estética, cuidado e criatividade, garantindo que cada cliente se sinta confiante, elegante e única.</p>
+                            <p>Desde o primeiro dia em que entrei no mundo da estética, descobri que as unhas eram a minha verdadeira paixão. Com o tempo, fui aperfeiçoando técnicas, explorando tendências e investindo em formação contínua para oferecer resultados profissionais, duradouros e totalmente personalizados.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segunda seção: Retângulo roxo claro com texto -->
+                <div class="retangulo-roxo">
+                    <h3>A minha filosofia de trabalho</h3>
+                    <p>Acredito que cada detalhe faz diferença. Por isso, trabalho apenas com materiais de alta qualidade, produtos seguros e marcas reconhecidas, garantindo não só beleza, mas também saúde e bem-estar das unhas.</p>
+                    <p>Aqui, cada cliente é especial. Cada sessão é pensada com dedicação, carinho e atenção ao estilo e personalidade de quem se senta à minha mesa.</p>
+                    <p class="destaque">Se procuras unhas elegantes, criativas e feitas com amor, estás no lugar certo.</p>
+                    <p class="assinatura">Mal posso esperar para cuidar de ti e das tuas unhas!</p>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- RODAPÉ -->
-    <footer class="rodape">
-        © Nathalie Crochine - Nail Designer
+    <footer class="footer">
+        <p>&copy; 2025 Unhas com Arte e Delicadeza. Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>
 
